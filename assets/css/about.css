@@ -402,6 +402,48 @@ a:hover {
     opacity: 1;
 }
 
+/* PDF Placeholder Styles */
+.pdf-placeholder {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px dashed #1d7184;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.pdf-placeholder:hover {
+    background: rgba(29, 113, 132, 0.1);
+    border-color: #c9be9d;
+}
+
+.pdf-placeholder-content {
+    text-align: center;
+    color: #1d7184;
+}
+
+.pdf-placeholder-content i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.pdf-placeholder-content span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Highlight Style */
+.highlight-yellow {
+    background-color: #ffff99;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
 /* Partners Section */
 .partners-section {
     padding: 4rem 0;

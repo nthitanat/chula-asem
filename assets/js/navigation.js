@@ -22,20 +22,20 @@ function createConsistentNavigation(currentPage = '') {
                     <div class="fusion-row">
                         <div class="fusion-logo" data-margin-top="31px" data-margin-bottom="31px">
                             <a class="fusion-logo-link" href="../index.html">
-                                <img src="https://asemlllhub.org/wp-content/uploads/2021/07/ASEM_logo1-e1680108569736.png" 
-                                     srcset="https://asemlllhub.org/wp-content/uploads/2021/07/ASEM_logo1-e1680108569736.png 1x" 
+                                <img src="../../assets/images/logo.png" 
+                                     srcset="../../assets/images/logo.png 1x" 
                                      width="776" height="236" 
                                      alt="ASEM Lifelong Learning Logo" 
                                      class="fusion-standard-logo">
                                 
-                                <img src="https://asemlllhub.org/wp-content/uploads/2021/05/logo2.png" 
-                                     srcset="https://asemlllhub.org/wp-content/uploads/2021/05/logo2.png 1x, https://asemlllhub.org/wp-content/uploads/2021/05/logo2.png 2x" 
+                                <img src="../../assets/images/logo.png" 
+                                     srcset="../../assets/images/logo.png 1x, ../../assets/images/logo.png 2x" 
                                      width="776" height="236" 
                                      alt="ASEM Lifelong Learning Logo" 
                                      class="fusion-mobile-logo">
                                 
-                                <img src="https://asemlllhub.org/wp-content/uploads/2021/05/logo2.png" 
-                                     srcset="https://asemlllhub.org/wp-content/uploads/2021/05/logo2.png 1x" 
+                                <img src="../../assets/images/logo.png" 
+                                     srcset="../../assets/images/logo.png 1x" 
                                      width="776" height="236" 
                                      alt="ASEM Lifelong Learning Logo" 
                                      class="fusion-sticky-logo">
@@ -45,7 +45,7 @@ function createConsistentNavigation(currentPage = '') {
                                 <h3 class="fusion-header-tagline">
                                     P: <span style="color: #ffffff">+353 (0)21 490 4700</span> | 
                                     E: <span style="color: #ffffff">
-                                        <a href="mailto:asemlllhub@ucc.ie" style="text-decoration: none; color: #ffffff !important">asemlllhub@ucc.ie</a>
+                                        <a href="mailto:asemlllhub@chula.ac.th" style="text-decoration: none; color: #ffffff !important">asemlllhub@chula.ac.th</a>
                                     </span>
                                 </h3>
                             </div>
@@ -202,20 +202,20 @@ function createRootNavigation(currentPage = '') {
                     <div class="fusion-row">
                         <div class="fusion-logo" data-margin-top="31px" data-margin-bottom="31px">
                             <a class="fusion-logo-link" href="index.html">
-                                <img src="https://asemlllhub.org/wp-content/uploads/2021/07/ASEM_logo1-e1680108569736.png" 
-                                     srcset="https://asemlllhub.org/wp-content/uploads/2021/07/ASEM_logo1-e1680108569736.png 1x" 
+                                <img src="../../assets/images/logo.png" 
+                                     srcset="../../assets/images/logo.png 1x" 
                                      width="776" height="236" 
                                      alt="ASEM Lifelong Learning Logo" 
                                      class="fusion-standard-logo">
                                 
-                                <img src="https://asemlllhub.org/wp-content/uploads/2021/05/logo2.png" 
-                                     srcset="https://asemlllhub.org/wp-content/uploads/2021/05/logo2.png 1x, https://asemlllhub.org/wp-content/uploads/2021/05/logo2.png 2x" 
+                                <img src="../../assets/images/logo.png" 
+                                     srcset="../../assets/images/logo.png 1x, ../../assets/images/logo.png 2x" 
                                      width="776" height="236" 
                                      alt="ASEM Lifelong Learning Logo" 
                                      class="fusion-mobile-logo">
                                 
-                                <img src="https://asemlllhub.org/wp-content/uploads/2021/05/logo2.png" 
-                                     srcset="https://asemlllhub.org/wp-content/uploads/2021/05/logo2.png 1x" 
+                                <img src="../../assets/images/logo.png" 
+                                     srcset="../../assets/images/logo.png 1x" 
                                      width="776" height="236" 
                                      alt="ASEM Lifelong Learning Logo" 
                                      class="fusion-sticky-logo">
@@ -225,7 +225,7 @@ function createRootNavigation(currentPage = '') {
                                 <h3 class="fusion-header-tagline">
                                     P: <span style="color: #ffffff">+353 (0)21 490 4700</span> | 
                                     E: <span style="color: #ffffff">
-                                        <a href="mailto:asemlllhub@ucc.ie" style="text-decoration: none; color: #ffffff !important">asemlllhub@ucc.ie</a>
+                                        <a href="mailto:asemlllhub@chula.ac.th" style="text-decoration: none; color: #ffffff !important">asemlllhub@chula.ac.th</a>
                                     </span>
                                 </h3>
                             </div>

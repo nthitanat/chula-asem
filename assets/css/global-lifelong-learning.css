@@ -348,10 +348,14 @@ section {
 }
 
 .content-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
+    display: flex;
+    justify-content: center;
     align-items: start;
+}
+
+.content-main {
+    width: 90%;
+    max-width: 1200px;
 }
 
 .content-card {

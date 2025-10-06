@@ -1,0 +1,617 @@
+/* Meet the Team Page Styles */
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 50vh;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(41,175,160);
+    background: linear-gradient(135deg, rgba(41,175,160,1) 0%, rgba(24,80,116,1) 56%, rgba(21,40,96,1) 100%);
+    margin-top: 120px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(35, 45, 96, 0.3);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+.main-content {
+    padding: 4rem 0;
+}
+
+/* Introduction Section */
+.intro-section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.text-content h1 {
+    color: #1d7184;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
+/* Team Section */
+.team-section {
+    padding: 2rem 0;
+}
+
+/* President Featured Card */
+.president-featured-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    margin-bottom: 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 0;
+    transition: all 0.3s ease;
+}
+
+.president-featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.president-image {
+    background: rgb(41,175,160);
+    background: linear-gradient(135deg, rgba(41,175,160,1) 0%, rgba(24,80,116,1) 56%, rgba(21,40,96,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.president-photo {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.president-photo:hover {
+    transform: scale(1.05);
+}
+
+.president-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.president-header {
+    margin-bottom: 2rem;
+}
+
+.president-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1d7184;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.president-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.president-biography {
+    margin-bottom: 2rem;
+}
+
+.president-biography p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 1.2rem;
+}
+
+.president-biography p:last-child {
+    margin-bottom: 0;
+}
+
+.president-contact {
+    display: flex;
+    align-items: center;
+}
+
+.president-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #1d7184;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    background: rgba(29, 113, 132, 0.1);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(29, 113, 132, 0.2);
+}
+
+.president-email:hover {
+    background: rgba(29, 113, 132, 0.2);
+    color: #155c6b;
+    border-color: rgba(29, 113, 132, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(29, 113, 132, 0.3);
+}
+
+.president-email i {
+    font-size: 1.1rem;
+}
+
+/* Other Team Members Section */
+.other-team-section {
+    margin-top: 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1d7184;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Team Cards */
+.team-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(29, 113, 132, 0.1);
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border-color: rgba(29, 113, 132, 0.3);
+}
+
+.team-card-header {
+    background: rgb(41,175,160);
+    background: linear-gradient(135deg, rgba(41,175,160,1) 0%, rgba(24,80,116,1) 56%, rgba(21,40,96,1) 100%);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.team-card-header::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid #1d7184;
+}
+
+.team-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-avatar i {
+    font-size: 4rem;
+    color: white;
+}
+
+.team-card-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.team-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1d7184;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.team-position {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-contact {
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1d7184;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    background: rgba(29, 113, 132, 0.05);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(29, 113, 132, 0.2);
+}
+
+.email-link:hover {
+    background: rgba(29, 113, 132, 0.1);
+    color: #155c6b;
+    border-color: rgba(29, 113, 132, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(29, 113, 132, 0.2);
+}
+
+.email-link i {
+    font-size: 1rem;
+}
+
+/* Back to About Section */
+.back-to-about {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.back-link {
+    display: inline-block;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: rgb(41,175,160);
+    background: linear-gradient(135deg, rgba(41,175,160,1) 0%, rgba(24,80,116,1) 56%, rgba(21,40,96,1) 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-back:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.btn-back i {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .president-featured-card {
+        grid-template-columns: 250px 1fr;
+        margin-bottom: 3rem;
+    }
+    
+    .president-content {
+        padding: 2rem;
+    }
+    
+    .president-name {
+        font-size: 2rem;
+    }
+    
+    .president-title {
+        font-size: 1.2rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    
+    .team-name {
+        font-size: 1.3rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .president-featured-card {
+        grid-template-columns: 1fr;
+        margin-bottom: 2.5rem;
+    }
+    
+    .president-image {
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .president-photo {
+        max-width: 200px;
+    }
+    
+    .president-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .president-name {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .president-title {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .president-biography p {
+        font-size: 1rem;
+    }
+    
+    .president-contact {
+        justify-content: center;
+    }
+    
+    .hero-section {
+        height: 40vh;
+        min-height: 300px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .text-content {
+        padding: 1.5rem;
+    }
+    
+    .text-content h1 {
+        font-size: 2rem;
+    }
+    
+    .team-card-body {
+        padding: 1.5rem;
+    }
+    
+    .team-name {
+        font-size: 1.2rem;
+    }
+    
+    .team-position {
+        font-size: 0.95rem;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .president-image {
+        padding: 1.5rem;
+    }
+    
+    .president-photo {
+        max-width: 180px;
+    }
+    
+    .president-content {
+        padding: 1.5rem 1rem;
+    }
+    
+    .president-name {
+        font-size: 1.6rem;
+    }
+    
+    .president-title {
+        font-size: 1rem;
+    }
+    
+    .president-biography p {
+        font-size: 0.95rem;
+    }
+    
+    .president-email {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-text p {
+        font-size: 1rem;
+    }
+    
+    .text-content {
+        padding: 1rem;
+    }
+    
+    .text-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .team-card-header {
+        padding: 1.5rem;
+    }
+    
+    .team-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .team-avatar i {
+        font-size: 3rem;
+    }
+    
+    .team-card-body {
+        padding: 1rem;
+    }
+    
+    .team-name {
+        font-size: 1.1rem;
+    }
+    
+    .email-link {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-back {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Loading States */
+.team-card.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Print Styles */
+@media print {
+    .hero-section,
+    .back-to-about,
+    .btn-back {
+        display: none !important;
+    }
+    
+    .team-card {
+        background: white !important;
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        break-inside: avoid;
+    }
+    
+    .team-card-header {
+        background: #f5f5f5 !important;
+    }
+    
+    .email-link {
+        background: transparent !important;
+        border: 1px solid #ddd !important;
+        color: #333 !important;
+    }
+}
