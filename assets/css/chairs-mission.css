@@ -17,22 +17,22 @@ body {
     overflow-x: hidden;
 }
 
-/* CSS Variables */
+/* CSS Variables - Now using centralized theme colors from main.css */
 :root {
-    --primary-color: #29afa0;
-    --secondary-color: #185074;
-    --accent-color: #152860;
-    --text-primary: #232d60;
-    --text-secondary: #1d7184;
-    --text-light: #666;
-    --background-primary: #f3f1ec;
-    --background-secondary: #fff;
-    --border-color: #ddd7ca;
-    --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
-    --shadow-medium: 0 4px 20px rgba(0,0,0,0.15);
-    --shadow-heavy: 0 8px 30px rgba(0,0,0,0.25);
-    --border-radius: 8px;
-    --transition: all 0.3s ease;
+    --primary-color: var(--color-primary-teal-variant);
+    --secondary-color: var(--color-secondary-navy-light);
+    --accent-color: var(--color-secondary-navy-darker);
+    --text-primary: var(--color-secondary-navy);
+    --text-secondary: var(--color-primary-teal);
+    --text-light: var(--color-text-light);
+    --background-primary: var(--color-bg-cream);
+    --background-secondary: var(--color-bg-white);
+    --border-color: var(--color-border-cream);
+    --shadow-light: var(--shadow-light);
+    --shadow-medium: var(--shadow-medium);
+    --shadow-heavy: var(--shadow-heavy);
+    --border-radius: var(--radius-medium);
+    --transition: var(--transition-smooth);
     --max-width: 1200px;
     --header-height: 80px;
 }

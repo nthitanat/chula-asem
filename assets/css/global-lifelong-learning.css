@@ -14,8 +14,8 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #232d60;
-    background: linear-gradient(135deg, #f3f1ec 0%, #e7efee 100%);
+    color: var(--color-secondary-navy);
+    background: var(--gradient-background-light);
     overflow-x: hidden;
 }
 
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     line-height: 1.3;
-    color: #1d7184;
+    color: var(--color-primary-teal);
 }
 
 h1 {
@@ -54,22 +54,22 @@ h4 {
 
 p {
     margin-bottom: 1rem;
-    color: #333;
+    color: var(--color-text-dark);
 }
 
 a {
-    color: #27a29a;
+    color: var(--color-primary-teal-light);
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: var(--transition-smooth);
 }
 
 a:hover {
-    color: #1d7184;
+    color: var(--color-primary-teal);
 }
 
 /* Header Styles */
 .header {
-    background: linear-gradient(90deg, rgba(41,175,160,1) 0%, rgba(24,80,116,1) 56%, rgba(21,40,96,1) 100%);
+    background: var(--gradient-hero);
     padding: 0;
     position: fixed;
     top: 0;
@@ -112,18 +112,18 @@ a:hover {
 }
 
 .nav-link {
-    color: white;
+    color: var(--color-text-white);
     font-weight: 500;
     padding: 0.75rem 1rem;
     border-radius: 5px;
-    transition: all 0.3s ease;
+    transition: var(--transition-smooth);
     position: relative;
 }
 
 .nav-link:hover,
 .nav-link.active {
     background: rgba(255, 255, 255, 0.1);
-    color: #f3f1ec;
+    color: var(--color-bg-cream);
 }
 
 /* Mobile Navigation Toggle */
@@ -137,7 +137,7 @@ a:hover {
 .bar {
     width: 25px;
     height: 3px;
-    background: white;
+    background: var(--color-text-white);
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 3px;
@@ -184,7 +184,7 @@ a:hover {
     position: relative;
     z-index: 2;
     text-align: center;
-    color: white;
+    color: var(--color-text-white);
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
@@ -198,7 +198,7 @@ a:hover {
 }
 
 .breadcrumb a {
-    color: white;
+    color: var(--color-text-white);
 }
 
 .breadcrumb i {
@@ -209,7 +209,7 @@ a:hover {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
     margin-bottom: 1rem;
-    color: white;
+    color: var(--color-text-white);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -236,13 +236,13 @@ a:hover {
 
 .badge-primary {
     background: rgba(255, 255, 255, 0.2);
-    color: white;
+    color: var(--color-text-white);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .badge-secondary {
     background: rgba(222, 33, 28, 0.9);
-    color: white;
+    color: var(--color-text-white);
 }
 
 /* Section Styles */
@@ -271,7 +271,7 @@ section {
 
 /* Event Summary Section */
 .event-summary {
-    background: white;
+    background: var(--color-bg-white);
     position: relative;
     overflow: hidden;
 }
@@ -296,7 +296,7 @@ section {
 }
 
 .summary-card {
-    background: white;
+    background: var(--color-bg-white);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -331,13 +331,13 @@ section {
 }
 
 .summary-content h3 {
-    color: #1d7184;
+    color: var(--color-primary-teal);
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
 
 .summary-content p {
-    color: #666;
+    color: var(--color-text-light);
     font-size: 0.95rem;
     margin: 0;
 }
@@ -359,7 +359,7 @@ section {
 }
 
 .content-card {
-    background: white;
+    background: var(--color-bg-white);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
@@ -377,7 +377,7 @@ section {
 }
 
 .content-header h2 {
-    color: white;
+    color: var(--color-text-white);
     margin: 0;
     font-size: 1.5rem;
 }
@@ -406,7 +406,7 @@ section {
 }
 
 .press-title {
-    color: #1d7184;
+    color: var(--color-primary-teal);
     font-size: 1.75rem;
     margin-bottom: 1.5rem;
     line-height: 1.4;
@@ -430,7 +430,7 @@ section {
     position: relative;
     padding-left: 2rem;
     margin-bottom: 0.75rem;
-    color: #333;
+    color: var(--color-text-dark);
 }
 
 .press-highlights li::before {
@@ -479,13 +479,13 @@ section {
 }
 
 .topic-card h5 {
-    color: #1d7184;
+    color: var(--color-primary-teal);
     margin-bottom: 0.75rem;
     font-size: 1.1rem;
 }
 
 .topic-card p {
-    color: #666;
+    color: var(--color-text-light);
     font-size: 0.9rem;
     margin: 0;
 }
@@ -503,12 +503,12 @@ section {
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 1rem;
-    color: #1d7184;
+    color: var(--color-primary-teal);
 }
 
 .quote cite {
     font-weight: 500;
-    color: #27a29a;
+    color: var(--color-primary-teal-light);
     font-style: normal;
     display: block;
 }
@@ -523,13 +523,13 @@ section {
 }
 
 .theme-highlight h4 {
-    color: white;
+    color: var(--color-text-white);
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
 
 .theme-highlight p {
-    color: white;
+    color: var(--color-text-white);
     margin-bottom: 1rem;
 }
 
@@ -545,7 +545,7 @@ section {
 }
 
 .sidebar-card {
-    background: white;
+    background: var(--color-bg-white);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding: 2rem;
@@ -554,7 +554,7 @@ section {
 }
 
 .sidebar-card h3 {
-    color: #1d7184;
+    color: var(--color-primary-teal);
     margin-bottom: 1.5rem;
     font-size: 1.25rem;
     padding-bottom: 0.75rem;
@@ -574,7 +574,7 @@ section {
 }
 
 .info-item i {
-    color: #27a29a;
+    color: var(--color-primary-teal-light);
     font-size: 1.1rem;
     width: 20px;
     margin-top: 2px;
@@ -582,13 +582,13 @@ section {
 
 .info-item div strong {
     display: block;
-    color: #1d7184;
+    color: var(--color-primary-teal);
     font-weight: 600;
     margin-bottom: 0.25rem;
 }
 
 .info-item div p {
-    color: #666;
+    color: var(--color-text-light);
     margin: 0;
     font-size: 0.9rem;
 }
@@ -607,20 +607,20 @@ section {
 }
 
 .conference-item h4 {
-    color: #1d7184;
+    color: var(--color-primary-teal);
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
 
 .conference-item p {
-    color: #666;
+    color: var(--color-text-light);
     margin-bottom: 0.75rem;
     font-size: 0.9rem;
 }
 
 .conf-badge {
-    background: #27a29a;
-    color: white;
+    background: var(--color-primary-teal-light);
+    color: var(--color-text-white);
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -646,7 +646,7 @@ section {
 }
 
 .org-list i {
-    color: #27a29a;
+    color: var(--color-primary-teal-light);
     font-size: 0.9rem;
 }
 

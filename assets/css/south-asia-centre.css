@@ -3,19 +3,19 @@
    ASEM LLL Hub
 =========================== */
 
-/* CSS Custom Properties (Variables) */
+/* CSS Custom Properties (Variables) - Now using centralized theme colors from main.css */
 :root {
     /* ASEM Brand Colors */
-    --primary-color: #27a29a;
-    --primary-dark: #1d7184;
-    --secondary-color: #232d60;
-    --accent-color: #d4bb84;
-    --danger-color: #de211c;
-    --light-bg: #f3f1ec;
-    --white: #ffffff;
-    --light-gray: #e7efee;
-    --text-dark: #333333;
-    --text-light: #666666;
+    --primary-color: var(--color-primary-teal-light);
+    --primary-dark: var(--color-primary-teal);
+    --secondary-color: var(--color-secondary-navy);
+    --accent-color: var(--color-accent-gold-variant);
+    --danger-color: var(--color-accent-red);
+    --light-bg: var(--color-bg-cream);
+    --white: var(--color-bg-white);
+    --light-gray: var(--color-bg-light-green);
+    --text-dark: var(--color-text-dark);
+    --text-light: var(--color-text-light);
     
     /* Gradients */
     --primary-gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);

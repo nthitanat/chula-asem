@@ -8,15 +8,15 @@
 }
 
 :root {
-    /* ASEM Brand Colors */
-    --primary-teal: #27a29a;
-    --secondary-teal: #1d7184;
-    --accent-gold: #d4bb84;
-    --navy-blue: #232d60;
-    --light-gray: #f3f1ec;
-    --white: #ffffff;
-    --black: #333333;
-    --red-accent: #de211c;
+    /* ASEM Brand Colors - Now using centralized theme colors from main.css */
+    --primary-teal: var(--color-primary-teal-light);
+    --secondary-teal: var(--color-primary-teal);
+    --accent-gold: var(--color-accent-gold-variant);
+    --navy-blue: var(--color-secondary-navy);
+    --light-gray: var(--color-bg-cream);
+    --white: var(--color-bg-white);
+    --black: var(--color-text-dark);
+    --red-accent: var(--color-accent-red);
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--primary-teal) 0%, var(--secondary-teal) 100%);

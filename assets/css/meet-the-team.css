@@ -8,8 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(41,175,160);
-    background: linear-gradient(135deg, rgba(41,175,160,1) 0%, rgba(24,80,116,1) 56%, rgba(21,40,96,1) 100%);
+    background: var(--gradient-hero);
     margin-top: 120px;
 }
 
@@ -27,19 +26,19 @@
     position: relative;
     z-index: 2;
     text-align: center;
-    color: white;
+    color: var(--color-text-white);
 }
 
 .hero-text h1 {
     font-size: 3rem;
-    color: white;
+    color: var(--color-text-white);
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text p {
     font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--color-text-white-90);
     margin-bottom: 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -61,15 +60,15 @@
 }
 
 .text-content {
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--color-bg-card);
     padding: 2.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-medium);
     margin-bottom: 3rem;
 }
 
 .text-content h1 {
-    color: #1d7184;
+    color: var(--color-primary-teal);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
@@ -77,7 +76,7 @@
 .text-content p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--color-text-medium);
     margin: 0;
 }
 
@@ -88,7 +87,7 @@
 
 /* President Featured Card */
 .president-featured-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--color-bg-overlay);
     border-radius: 20px;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
     overflow: hidden;
@@ -108,8 +107,7 @@
 }
 
 .president-image {
-    background: rgb(41,175,160);
-    background: linear-gradient(135deg, rgba(41,175,160,1) 0%, rgba(24,80,116,1) 56%, rgba(21,40,96,1) 100%);
+    background: var(--gradient-hero);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,7 +141,7 @@
 .president-name {
     font-size: 2.2rem;
     font-weight: 700;
-    color: #1d7184;
+    color: var(--color-primary-teal);
     margin-bottom: 0.5rem;
     line-height: 1.2;
 }
@@ -151,7 +149,7 @@
 .president-title {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #666;
+    color: var(--color-text-light);
     margin-bottom: 0;
 }
 
@@ -162,7 +160,7 @@
 .president-biography p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #555;
+    color: var(--color-text-medium);
     margin-bottom: 1.2rem;
 }
 
@@ -179,7 +177,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    color: #1d7184;
+    color: var(--color-primary-teal);
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
@@ -192,7 +190,7 @@
 
 .president-email:hover {
     background: rgba(29, 113, 132, 0.2);
-    color: #155c6b;
+    color: var(--color-primary-teal-darker);
     border-color: rgba(29, 113, 132, 0.4);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(29, 113, 132, 0.3);
@@ -210,7 +208,7 @@
 .section-title {
     font-size: 2rem;
     font-weight: 600;
-    color: #1d7184;
+    color: var(--color-primary-teal);
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -225,7 +223,7 @@
 
 /* Team Cards */
 .team-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--color-bg-overlay);
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -240,8 +238,7 @@
 }
 
 .team-card-header {
-    background: rgb(41,175,160);
-    background: linear-gradient(135deg, rgba(41,175,160,1) 0%, rgba(24,80,116,1) 56%, rgba(21,40,96,1) 100%);
+    background: var(--gradient-hero);
     padding: 2rem;
     text-align: center;
     position: relative;
@@ -257,7 +254,7 @@
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 10px solid #1d7184;
+    border-top: 10px solid var(--color-primary-teal);
 }
 
 .team-avatar {
@@ -274,7 +271,7 @@
 
 .team-avatar i {
     font-size: 4rem;
-    color: white;
+    color: var(--color-text-white);
 }
 
 .team-card-body {
@@ -285,7 +282,7 @@
 .team-name {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #1d7184;
+    color: var(--color-primary-teal);
     margin-bottom: 0.5rem;
     line-height: 1.3;
 }
@@ -293,7 +290,7 @@
 .team-position {
     font-size: 1rem;
     font-weight: 500;
-    color: #666;
+    color: var(--color-text-light);
     margin-bottom: 1.5rem;
     line-height: 1.4;
     min-height: 3rem;
@@ -311,7 +308,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: #1d7184;
+    color: var(--color-primary-teal);
     text-decoration: none;
     font-weight: 500;
     padding: 0.75rem 1.5rem;
@@ -323,7 +320,7 @@
 
 .email-link:hover {
     background: rgba(29, 113, 132, 0.1);
-    color: #155c6b;
+    color: var(--color-primary-teal-darker);
     border-color: rgba(29, 113, 132, 0.4);
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(29, 113, 132, 0.2);

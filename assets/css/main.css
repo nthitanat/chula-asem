@@ -3,6 +3,102 @@
    Unified Navigation & Common Styles
    ====================================== */
 
+/* === CSS CUSTOM PROPERTIES (THEME COLORS) === */
+:root {
+    /* === ORIGINAL TEAL PALETTE (COMMENTED FOR REVERSION) === */
+    /*
+    --color-primary-teal: #1d7184;
+    --color-primary-teal-light: #27a29a;
+    --color-primary-teal-variant: #29afa0;
+    --color-primary-teal-darker: #2a8a9e;
+    --color-secondary-navy: #232d60;
+    --color-secondary-navy-light: #185074;
+    --color-secondary-navy-darker: #152860;
+    --color-accent-gold: #c9be9d;
+    --color-accent-gold-variant: #d4bb84;
+    --color-accent-red: #de211c;
+    --color-accent-red-light: #ff3a2d;
+    */
+    
+    /* === NEW PINK/ROSE PALETTE === */
+    /* Primary Brand Colors - Pink/Rose */
+    --color-primary-teal: #DE5C8E;           /* Main brand pink (C0 M76 Y9 K8) */
+    --color-primary-teal-light: #F6D9E1;     /* Light pink (C0 M15 Y2 K2) */
+    --color-primary-teal-variant: #E67BA0;   /* Pink variant */
+    --color-primary-teal-darker: #C54080;    /* Darker pink */
+    
+    /* Complementary Colors - Green/Mint */
+    --color-secondary-navy: #5CDE8E;         /* Complementary green */
+    --color-secondary-navy-light: #8EE5A8;   /* Light green */
+    --color-secondary-navy-darker: #40C470;  /* Darker green */
+    
+    /* Analogous Colors */
+    --color-accent-gold: #DE5CB4;            /* Purple-magenta analogous */
+    --color-accent-gold-variant: #E67BC0;    /* Light purple variant */
+    --color-accent-red: #DE8C5C;             /* Coral-peach analogous */
+    --color-accent-red-light: #E6A67B;       /* Light coral */
+    
+    /* Background Colors */
+    --color-bg-cream: #fdf8fa;               /* Soft pink-tinted cream */
+    --color-bg-light-green: #f0f8f2;         /* Light mint background */
+    --color-bg-light-gray: #f8f9fa;
+    --color-bg-white: #ffffff;
+    --color-bg-card: rgba(255, 255, 255, 0.8);
+    --color-bg-overlay: rgba(255, 255, 255, 0.95);
+    /* Additional Palette Colors */
+    --color-accent-cream: #F6D9E1;           /* Using the light pink as cream */
+    --color-accent-mint: #D9F6E1;            /* Complementary mint */
+    
+    /* Text Colors */
+    --color-text-dark: #333333;
+    --color-text-medium: #555555;
+    --color-text-light: #666666;
+    --color-text-lighter: #999999;
+    --color-text-white: #ffffff;
+    --color-text-white-90: rgba(255, 255, 255, 0.9);
+    --color-text-white-80: rgba(255, 255, 255, 0.8);
+    
+    /* Border Colors */
+    --color-border-light: #f2e6ea;           /* Pink-tinted border */
+    --color-border-lighter: #f0f0f0;
+    --color-border-cream: #F6D9E1;           /* Light pink border */
+    --color-border-green: #e6f2ea;           /* Light mint border */
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary-teal) 0%, var(--color-primary-teal-darker) 100%);
+    --gradient-primary-reverse: linear-gradient(135deg, var(--color-primary-teal-darker) 0%, var(--color-primary-teal) 100%);
+    --gradient-hero: linear-gradient(90deg, #DE5C8E 0%, #5CDE8E 56%, #DE5CB4 100%);
+    --gradient-navbar: linear-gradient(90deg, #DE5C8E 0%, #5CDE8E 56%, #DE5CB4 100%);
+    --gradient-navbar-mobile: linear-gradient(180deg, rgba(222,92,142,0.98) 0%, rgba(92,222,142,0.98) 56%, rgba(222,92,180,0.98) 100%);
+    --gradient-navy: linear-gradient(135deg, var(--color-secondary-navy) 0%, var(--color-primary-teal) 100%);
+    --gradient-background: linear-gradient(90deg, var(--color-bg-cream) 0%, rgba(253,248,250,0) 100%);
+    --gradient-body-light: linear-gradient(90deg, rgba(253,248,250,1) 0%, rgba(253,248,250,0) 100%);
+    --gradient-background-light: linear-gradient(135deg, var(--color-bg-cream) 0%, var(--color-bg-light-green) 100%);
+    --gradient-accent: linear-gradient(90deg, var(--color-primary-teal) 0%, var(--color-accent-red) 100%);
+    --gradient-vertical: linear-gradient(180deg, var(--color-primary-teal) 0%, var(--color-secondary-navy) 100%);
+    --overlay-hero: linear-gradient(135deg, rgba(222,92,180,0.7) 0%, rgba(222,92,142,0.7) 100%);
+    
+    /* Shadows */
+    --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
+    --shadow-medium: 0 4px 20px rgba(0,0,0,0.15);
+    --shadow-hover: 0 10px 30px rgba(0,0,0,0.15);
+    --shadow-heavy: 0 8px 30px rgba(0,0,0,0.25);
+    --shadow-primary: 0 4px 15px rgba(222, 92, 142, 0.3);
+    --shadow-primary-hover: 0 6px 20px rgba(222, 92, 142, 0.4);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s ease;
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Border Radius */
+    --radius-small: 4px;
+    --radius-medium: 8px;
+    --radius-large: 12px;
+    --radius-xl: 15px;
+    --radius-pill: 25px;
+    --radius-circle: 50%;
+}
+
 /* === RESET & BASE STYLES === */
 * {
     margin: 0;
@@ -17,7 +113,7 @@ html {
 body {
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--color-text-dark);
     overflow-x: hidden;
 }
 
@@ -33,8 +129,8 @@ body {
     position: absolute;
     top: -40px;
     left: 6px;
-    background: #1d7184;
-    color: white;
+    background: var(--color-primary-teal);
+    color: var(--color-text-white);
     padding: 8px;
     text-decoration: none;
     border-radius: 0 0 4px 4px;
@@ -49,51 +145,29 @@ body {
 
 /* === NAVIGATION STYLES === */
 .asem-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    background: var(--color-bg-white);
 }
 
 /* Top Bar */
 .asem-top-bar {
-    background: linear-gradient(135deg, #1d7184 0%, #2a8a9e 100%);
-    color: white;
-    padding: 8px 0;
-    font-size: 14px;
-}
-
-.asem-top-bar .container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.asem-contact-info span {
-    font-weight: 300;
-}
-
-.asem-contact-info .highlight {
-    font-weight: 500;
-    color: #c9be9d;
-}
-
-.asem-contact-info a {
-    color: #c9be9d;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.asem-contact-info a:hover {
-    color: #fff;
+    height: 300px;
+    background-image: url('../images/cover.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
 }
 
 /* Main Navigation */
 .asem-main-nav {
-    background: #fff;
+    background: var(--color-bg-white);
     padding: 15px 0;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow-light);
 }
 
 .asem-main-nav .container {
@@ -139,7 +213,7 @@ body {
 .asem-nav-menu > li > a {
     display: block;
     padding: 10px 14px;
-    color: #333;
+    color: var(--color-text-dark);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -151,8 +225,8 @@ body {
 
 .asem-nav-menu > li > a:hover,
 .asem-nav-menu > li.current > a {
-    background: linear-gradient(135deg, #1d7184 0%, #2a8a9e 100%);
-    color: white;
+    background: var(--gradient-primary);
+    color: var(--color-text-white);
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(29, 113, 132, 0.3);
 }
@@ -166,19 +240,19 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background: white;
+    background: var(--color-bg-white);
     min-width: 250px;
     list-style: none;
     padding: 10px 0;
     margin: 0;
     border-radius: 8px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: var(--shadow-medium);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    transition: all 0.3s ease;
+    transition: var(--transition-smooth);
     z-index: 1000;
-    border-top: 3px solid #1d7184;
+    border-top: 3px solid var(--color-primary-teal);
 }
 
 .asem-nav-menu li.has-dropdown:hover .asem-dropdown {
@@ -194,7 +268,7 @@ body {
 .asem-dropdown li a {
     display: block;
     padding: 12px 20px;
-    color: #333;
+    color: var(--color-text-dark);
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -202,8 +276,8 @@ body {
 }
 
 .asem-dropdown li a:hover {
-    background: #f8f9fa;
-    color: #1d7184;
+    background: var(--color-bg-light-gray);
+    color: var(--color-primary-teal);
     padding-left: 25px;
 }
 
@@ -213,7 +287,7 @@ body {
     background: none;
     border: none;
     font-size: 24px;
-    color: #333;
+    color: var(--color-text-dark);
     cursor: pointer;
     padding: 10px;
     border-radius: 5px;
@@ -221,8 +295,8 @@ body {
 }
 
 .asem-nav-toggle:hover {
-    background: #f8f9fa;
-    color: #1d7184;
+    background: var(--color-bg-light-gray);
+    color: var(--color-primary-teal);
 }
 
 .asem-nav-toggle i {
@@ -260,12 +334,7 @@ body {
 
 @media (max-width: 768px) {
     .asem-top-bar {
-        text-align: center;
-        font-size: 12px;
-    }
-    
-    .asem-top-bar .container {
-        justify-content: center;
+        height: 200px;
     }
 
     .asem-main-nav {
@@ -281,7 +350,7 @@ body {
         top: 100%;
         left: 0;
         right: 0;
-        background: white;
+        background: var(--color-bg-white);
         flex-direction: column;
         padding: 20px;
         box-shadow: 0 5px 20px rgba(0,0,0,0.1);
@@ -319,7 +388,7 @@ body {
         position: static;
         width: 100%;
         box-shadow: none;
-        background: #f8f9fa;
+        background: var(--color-bg-light-gray);
         margin: 5px 0;
         border: none;
         border-radius: 8px;
@@ -373,8 +442,8 @@ body {
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    background: linear-gradient(135deg, #1d7184 0%, #2a8a9e 100%);
-    color: white;
+    background: var(--gradient-primary);
+    color: var(--color-text-white);
     text-decoration: none;
     border-radius: 25px;
     font-weight: 500;
@@ -385,19 +454,19 @@ body {
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(29, 113, 132, 0.3);
-    background: linear-gradient(135deg, #2a8a9e 0%, #1d7184 100%);
+    box-shadow: var(--shadow-primary);
+    background: var(--gradient-primary-reverse);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #1d7184;
-    border: 2px solid #1d7184;
+    color: var(--color-primary-teal);
+    border: 2px solid var(--color-primary-teal);
 }
 
 .btn-secondary:hover {
-    background: #1d7184;
-    color: white;
+    background: var(--color-primary-teal);
+    color: var(--color-text-white);
 }
 
 /* === ANIMATIONS === */
@@ -432,14 +501,14 @@ body {
 /* Focus styles */
 a:focus,
 button:focus {
-    outline: 2px solid #1d7184;
+    outline: 2px solid var(--color-primary-teal);
     outline-offset: 2px;
 }
 
 /* === FOOTER STYLES === */
 .asem-footer {
-    background: linear-gradient(135deg, #1d7184 0%, #2a8a9e 100%);
-    color: white;
+    background: var(--gradient-primary);
+    color: var(--color-text-white);
     margin-top: auto;
 }
 
@@ -461,7 +530,7 @@ button:focus {
 
 .asem-footer-column h3,
 .asem-footer-column h4 {
-    color: #c9be9d;
+    color: var(--color-accent-gold);
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -476,7 +545,7 @@ button:focus {
     left: 0;
     width: 40px;
     height: 2px;
-    background: #c9be9d;
+    background: var(--color-accent-gold);
 }
 
 .asem-footer-nav ul,
@@ -493,7 +562,7 @@ button:focus {
 
 .asem-footer-nav a,
 .asem-footer-links a {
-    color: #e0e6e9;
+    color: var(--color-border-light);
     text-decoration: none;
     font-size: 14px;
     transition: all 0.3s ease;
@@ -504,7 +573,7 @@ button:focus {
 
 .asem-footer-nav a:hover,
 .asem-footer-links a:hover {
-    color: #c9be9d;
+    color: var(--color-accent-gold);
     padding-left: 10px;
 }
 
@@ -525,7 +594,7 @@ button:focus {
 
 .asem-footer-contact {
     line-height: 1.8;
-    color: #e0e6e9;
+    color: var(--color-border-light);
 }
 
 .asem-footer-contact p {
@@ -533,13 +602,13 @@ button:focus {
 }
 
 .asem-footer-contact a {
-    color: #c9be9d;
+    color: var(--color-accent-gold);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: var(--transition-smooth);
 }
 
 .asem-footer-contact a:hover {
-    color: white;
+    color: var(--color-text-white);
 }
 
 .asem-footer-logos {
@@ -564,7 +633,7 @@ button:focus {
 }
 
 .asem-footer-description {
-    color: #e0e6e9;
+    color: var(--color-border-light);
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -586,19 +655,19 @@ button:focus {
 }
 
 .asem-footer-copyright {
-    color: #b8c5c9;
+    color: var(--color-text-white-80);
     font-size: 13px;
     line-height: 1.5;
 }
 
 .asem-footer-copyright a {
-    color: #c9be9d;
+    color: var(--color-accent-gold);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: var(--transition-smooth);
 }
 
 .asem-footer-copyright a:hover {
-    color: white;
+    color: var(--color-text-white);
 }
 
 .asem-social-links {
@@ -613,7 +682,7 @@ button:focus {
     width: 40px;
     height: 40px;
     background: rgba(255, 255, 255, 0.1);
-    color: white;
+    color: var(--color-text-white);
     text-decoration: none;
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -621,8 +690,8 @@ button:focus {
 }
 
 .asem-social-links a:hover {
-    background: #c9be9d;
-    color: #1d7184;
+    background: var(--color-accent-gold);
+    color: var(--color-primary-teal);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(201, 190, 157, 0.3);
 }
