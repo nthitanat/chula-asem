@@ -91,12 +91,6 @@ function createConsistentNavigation(currentPage = '') {
                                         <li><a href="../pages/about.html#university-partners">University Partners</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item menu-item-has-children ${currentPage === 'chairs-mission' ? 'current-menu-item' : ''}">
-                                    <a href="../pages/chairs-mission.html">Chair's Asia Mission 24/25</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="../pages/chairs-mission.html#asia-mission-23-24">Asia Mission 23/24</a></li>
-                                    </ul>
-                                </li>
                                 <li class="menu-item ${currentPage === 'news-events' ? 'current-menu-item' : ''}">
                                     <a href="../pages/news-events.html">News & Events</a>
                                 </li>
@@ -143,12 +137,6 @@ function createConsistentNavigation(currentPage = '') {
                                     <ul class="sub-menu">
                                         <li><a href="../pages/about.html#meet-the-team">Meet the Team</a></li>
                                         <li><a href="../pages/about.html#university-partners">University Partners</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="../pages/chairs-mission.html">Chair's Asia Mission 24/25</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="../pages/chairs-mission.html#asia-mission-23-24">Asia Mission 23/24</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="../pages/news-events.html">News & Events</a></li>
@@ -271,12 +259,6 @@ function createRootNavigation(currentPage = '') {
                                         <li><a href="pages/about.html#university-partners">University Partners</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="pages/chairs-mission.html">Chair's Asia Mission 24/25</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="pages/chairs-mission.html#asia-mission-23-24">Asia Mission 23/24</a></li>
-                                    </ul>
-                                </li>
                                 <li class="menu-item">
                                     <a href="pages/news-events.html">News & Events</a>
                                 </li>
@@ -323,12 +305,6 @@ function createRootNavigation(currentPage = '') {
                                     <ul class="sub-menu">
                                         <li><a href="pages/about.html#meet-the-team">Meet the Team</a></li>
                                         <li><a href="pages/about.html#university-partners">University Partners</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="pages/chairs-mission.html">Chair's Asia Mission 24/25</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="pages/chairs-mission.html#asia-mission-23-24">Asia Mission 23/24</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="pages/news-events.html">News & Events</a></li>
