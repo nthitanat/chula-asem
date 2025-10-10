@@ -116,7 +116,7 @@
 
 .president-photo {
     width: 250px;
-    height: 250px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
@@ -244,6 +244,10 @@
     padding: 2rem;
     text-align: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
 }
 
 .team-card-header::after {
@@ -260,8 +264,8 @@
 }
 
 .team-avatar {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 250px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
@@ -269,11 +273,26 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 .team-avatar i {
     font-size: 4rem;
     color: var(--color-text-white);
+}
+
+.team-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+    border: 2px solid var(--color-text-white);
+}
+
+.team-photo:hover {
+    transform: scale(1.05);
 }
 
 .team-card-body {
@@ -392,6 +411,15 @@
         gap: 2rem;
     }
     
+    .team-card-header {
+        min-height: 180px;
+    }
+    
+    .team-avatar {
+        width: 120px;
+        height: 120px;
+    }
+    
     .team-name {
         font-size: 1.3rem;
     }
@@ -413,8 +441,8 @@
     }
     
     .president-photo {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
     
     .president-content {
@@ -532,15 +560,20 @@
     
     .team-card-header {
         padding: 1.5rem;
+        min-height: 150px;
     }
     
     .team-avatar {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
     
     .team-avatar i {
         font-size: 3rem;
+    }
+    
+    .team-photo {
+        border: 1px solid var(--color-text-white);
     }
     
     .team-card-body {
