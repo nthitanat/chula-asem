@@ -1,0 +1,200 @@
+/* Privacy Policy Page Specific Styles */
+.privacy-hero {
+    background: var(--gradient-hero);
+    padding: 80px 0 60px;
+    text-align: center;
+    color: var(--color-text-white);
+}
+
+.privacy-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.privacy-hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+
+.privacy-content {
+    background: var(--color-bg-cream);
+    padding: 60px 0;
+}
+
+.privacy-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.privacy-intro {
+    background: var(--color-bg-white);
+    padding: 2rem;
+    border-radius: var(--radius-large);
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-light);
+}
+
+.privacy-intro p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-medium);
+}
+
+.privacy-intro p:last-child {
+    margin-bottom: 0;
+}
+
+/* Accordion Styles */
+.privacy-accordion {
+    background: var(--color-bg-white);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-light);
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    background: var(--color-bg-white);
+    transition: var(--transition-smooth);
+}
+
+.accordion-header:hover {
+    background: var(--color-bg-light-gray);
+}
+
+.accordion-button {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-primary-teal);
+    transition: var(--transition-smooth);
+}
+
+.accordion-button:hover {
+    color: var(--color-primary-teal-darker);
+}
+
+.accordion-icon {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    color: var(--color-secondary-navy);
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 2000px;
+}
+
+.accordion-body {
+    padding: 0 2rem 2rem;
+    color: var(--color-text-medium);
+    line-height: 1.6;
+}
+
+.accordion-body h3 {
+    color: var(--color-primary-teal);
+    margin-bottom: 1rem;
+}
+
+.accordion-body p {
+    margin-bottom: 1rem;
+}
+
+.accordion-body ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.accordion-body li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+    color: var(--color-text-medium);
+}
+
+.accordion-body li::marker {
+    color: var(--color-primary-teal);
+}
+
+/* Contact Section */
+.privacy-contact {
+    background: var(--color-primary-teal-light);
+    padding: 2rem;
+    border-radius: var(--radius-large);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.privacy-contact h3 {
+    color: var(--color-primary-teal);
+    margin-bottom: 1rem;
+}
+
+.privacy-contact p {
+    color: var(--color-text-medium);
+    margin-bottom: 1rem;
+}
+
+.privacy-contact a {
+    color: var(--color-primary-teal);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.privacy-contact a:hover {
+    color: var(--color-primary-teal-darker);
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .privacy-hero {
+        padding: 60px 0 40px;
+    }
+    
+    .privacy-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .privacy-content {
+        padding: 40px 0;
+    }
+    
+    .privacy-intro,
+    .accordion-body {
+        padding: 1.5rem;
+    }
+    
+    .accordion-button {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
