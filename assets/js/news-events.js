@@ -151,7 +151,7 @@ function initEventFiltering() {
             <button class="filter-btn active" data-filter="all">All Events</button>
             <button class="filter-btn" data-filter="webinar">Webinars</button>
             <button class="filter-btn" data-filter="conference">Conferences</button>
-            <button class="filter-btn" data-filter="memorial">Memorial</button>
+            <button class="filter-btn" data-filter="awards">Awards</button>
         </div>
     `;
     
